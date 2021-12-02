@@ -1,0 +1,21 @@
+header {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    padding-top: 150px;
+    background-color: #bdab38;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
+#username {
+    margin-top: -2.5em;
+}
+
+#profilePicture {
+    height: 200px;
+    width: 200px;
+}

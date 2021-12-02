@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    color: white;
+    background-color: #4056A1;
+    height: 120px;
+    width: 100vw;
+    padding: 1.5em;
+    
+}
+
+nav span {
+   font-family: 'Bungee', cursive;
+}
+
+#writeTweet {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding: 50px 1.5em;
+}
+
+#writeTweetIcon {
+    padding-left:3.5em;
+    padding-top: 5px;
+    color: white;
+}
