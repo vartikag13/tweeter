@@ -1,10 +1,14 @@
-header {
-    height: 400px;
-    width: 100%;
+@mixin align() {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  
+  header {
+    @include align;
+    height: 400px;
+    width: 100%;
     background-color: wheat;
     padding-top: 150px;
     background-color: #9268bbcc;

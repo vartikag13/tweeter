@@ -13,6 +13,7 @@ $(document).ready(function() {
       type: 'GET',
       context: document.body,
       success: function(data) {
+        //get sorted list of tweets if the get request is a success
         renderTweets(data);
       }
     });
@@ -48,11 +49,13 @@ $(document).ready(function() {
     const formData = $form.serialize();
     const tweetText = $('#tweet-text').val();
 
+    //no input
     if (tweetText === null || tweetText === '') {
       errorHandler('⚠ Please enter something to post it');
       return;
     }
 
+    //exceeds 140 characters
     if (tweetText.length > 140) {
       errorHandler('⚠ Tweet exceeded the character limit');
       return;
@@ -63,6 +66,7 @@ $(document).ready(function() {
         type: 'POST',
         data: formData,
         success: function(data) {
+          //slide up the older error if the post request is a success
           $('#errorMsg').slideUp("slow", function() {
           });
           loadTweets();
@@ -89,7 +93,7 @@ $(document).ready(function() {
     tweets.forEach(function(tweetItem) {
       renderedTweets = renderedTweets + createTweetElement(tweetItem);
     });
-    console.log(renderedTweets);
+    // console.log(renderedTweets);
     // takes return value and appends it to the tweets container
     $('.tweetDisplaySec').empty();
     $('.tweetDisplaySec').append(renderedTweets);
@@ -127,7 +131,7 @@ $(document).ready(function() {
 
     return $tweet;
   };
-  console.log("starting");
+  // console.log("starting");
   $('#submitBtn').on("submit", postTweet);
-  console.log("ended");
+  // console.log("ended");
 });
