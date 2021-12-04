@@ -7,12 +7,13 @@ header {
     align-items: center;
     background-color: wheat;
     padding-top: 150px;
-    background-color: #bdab38;
-    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    background-color: #9268bbcc;
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
 }
 
 #username {
     margin-top: -2.5em;
+    color: white;
 }
 
 #profilePicture {

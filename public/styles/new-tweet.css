@@ -36,12 +36,14 @@ output.counter {
     text-transform: uppercase;
     border: none;
     padding: 5px;
+    cursor: pointer;
 }
 
 
 article.tweetDisplay {
     border: 2.5px solid #545149;;
-    padding: 10px;
+    padding: 30px;
+    margin-top: 1em;
     margin-bottom: 1em;
     width: 75vw;
 }
@@ -60,6 +62,7 @@ article.tweetDisplay p {
     border-bottom: 2.5px solid #545149;
     padding-bottom: 10px;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 article.tweetDisplay footer {
@@ -73,6 +76,7 @@ article.tweetDisplay footer {
     grid-gap: 20px;
     grid-auto-flow: column;
     font-size: medium;
+    margin-top: -20px;
 }
   
 i:hover {
@@ -81,4 +85,29 @@ i:hover {
 
 article.tweetDisplay:hover{
     box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+}
+
+#footer-time {
+    font-size: medium;
+}
+
+#user-details {
+    display: flex;
+    align-items: center;
+}
+
+#user-details span {
+    position: absolute;
+    right: 15vw;
+    color: rgba(0, 0, 255, .2);
+    font-weight: 700;
+}
+
+
+#errorMsg {
+    text-align: center;
+    margin-bottom: 1em;
+    color: white;
+    background-color: rgb(146, 37, 37);
+    border-radius: 10px;
 }

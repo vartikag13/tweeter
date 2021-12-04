@@ -26,6 +26,8 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    
   </head>
 
   <body>
@@ -36,7 +38,8 @@
         <div>
           <b>Write</b> a new tweet
       </div>
-      <div id="writeTweetIcon"><i class="fas fa-angle-double-down"></i></div>
+      <!-- added label for tweet-text so that clicking the arrow focuses on the text area for writing a tweet -->
+      <label id="writeTweetIcon" for="tweet-text"><i class="fas fa-angle-double-down"></i></label> 
     </div>
     </nav>
     <header>
@@ -53,6 +56,7 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
+        <span id="errorMsg"></span>
         <form action= "/" method="post" enctype="application/x-www-form-urlencoded">
           <label class="tweetLabel" for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
@@ -62,20 +66,9 @@
           </div>
         </form>
       </section>
-      <article class="tweetDisplay">
-        <header>Header for tweet</header>
-        <p>Try this here</p>
-        <footer>
-          <div id="time-passed">
-            format(new Date());
-          </div>
-          <div id= "footer-icons">
-            <i class="fas fa-flag"></i> 
-            <i class="fas fa-retweet"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-        </footer>
-      </article>
+      <section class="tweetDisplaySec">
+        <!-- tweets get appended here -->
+      </section>
     </main>
   </body>
 </html>
