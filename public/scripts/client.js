@@ -93,7 +93,6 @@ $(document).ready(function() {
     tweets.forEach(function(tweetItem) {
       renderedTweets = renderedTweets + createTweetElement(tweetItem);
     });
-    // console.log(renderedTweets);
     // takes return value and appends it to the tweets container
     $('.tweetDisplaySec').empty();
     $('.tweetDisplaySec').append(renderedTweets);
@@ -131,7 +130,5 @@ $(document).ready(function() {
 
     return $tweet;
   };
-  // console.log("starting");
   $('#submitBtn').on("submit", postTweet);
-  // console.log("ended");
 });

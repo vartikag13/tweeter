@@ -24,8 +24,24 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+@media only screen and (min-width: 1024px) {
+  #responsiveContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7em;
+  }
+  #responsiveContent > header {
+    padding-top: 0;
+    height: 350px;
+    width: 350px;
+    margin-left: 5em;
+    flex: 0.5;
+  }
+}
+
 .container {
   width: 90%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,4 +49,7 @@ body {
   align-content: center;
   margin-left: 3em;
   background-color: #f4f1ec;
+}
+.container .tweetDisplaySec {
+  width: 75%;
 }
