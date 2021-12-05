@@ -1,11 +1,10 @@
-$font-bungee: 'Bungee', cursive;
-$text-color: white;
+@use 'variable' as v;
 
 nav {
     display: flex;
     position: fixed;
     align-items: center;
-    color: $text-color;
+    color: v.$white-color;
     background-color: #2c2e2c;
     height: 120px;
     width: 100vw;
@@ -13,9 +12,8 @@ nav {
     top: 0px;
 
     span {
-        font-family: $font-bungee;
+        font-family: v.$font-bungee;
      }
-    
 }
 
 #writeTweet {
@@ -28,5 +26,5 @@ nav {
 #writeTweetIcon {
     padding-left:3.5em;
     padding-top: 5px;
-    color: $text-color;
+    color: v.$white-color;
 }

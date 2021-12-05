@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     //error handling
     if (remainingChar < 0) {
-      $(this).parent().find('.counter').css('color', 'rgb(146, 37, 37)');
+      $(this).parent().find('.counter').css('color', '#d85a60');
     } else {
       $(this).parent().find('.counter').css('color', '#545149');
     }

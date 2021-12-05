@@ -1,3 +1,5 @@
+@use 'variable' as v;
+
 section.new-tweet {
     display: flex;
     flex-direction: column;
@@ -21,7 +23,7 @@ output.counter {
     display: flex;
     justify-content: right;
     margin-top: -1.5em;
-    font-family: 'Bungee', cursive;
+    font-family: v.$font-bungee;
 }
 
 .tweetLabel {
@@ -31,8 +33,8 @@ output.counter {
 
 #submitBtn {
     background-color: #4056A1;
-    color: white;
-    font-family: 'Bungee', cursive;
+    color: v.$white-color;
+    font-family: v.$font-bungee;
     text-transform: uppercase;
     border: none;
     padding: 5px;
@@ -109,6 +111,6 @@ article.tweetDisplay:hover{
     text-align: center;
     margin-bottom: 1em;
     color: white;
-    background-color: rgb(146, 37, 37);
+    background-color: v.$error-color;
     border-radius: 10px;
 }
